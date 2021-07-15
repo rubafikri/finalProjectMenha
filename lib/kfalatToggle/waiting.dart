@@ -51,7 +51,6 @@ class _WaitingScrState extends State<WaitingScr> {
           Padding(
             padding: EdgeInsets.only(top: 19.h),
             child: Container(
-              // height: double.infinity,
               child: StreamBuilder(
                 stream: getAllnames(),
                 builder: (BuildContext context,
@@ -81,9 +80,6 @@ class _WaitingScrState extends State<WaitingScr> {
                                       ));
                                 },
                                 child: WaitingCard(
-                                  // menhaname.toString(),
-                                  //  uninum.toString(),
-
                                   querySnapshot.docs[index]['name'].toString(),
                                   querySnapshot.docs[index]['level'].toString(),
                                 ));
@@ -91,19 +87,6 @@ class _WaitingScrState extends State<WaitingScr> {
                       : Center(child: CircularProgressIndicator());
                 },
               ),
-
-              // ListView.builder(
-              //   shrinkWrap: true,
-              //   physics: NeverScrollableScrollPhysics(),
-              //   itemCount: 20,
-              //   itemBuilder: (context, index) {
-              //     return InkWell(
-              //         onTap: () {
-              //           Get.to(() => KfalaSign());
-              //         },
-              //         child: WaitingCard());
-              //   },
-              // ),
             ),
           )
         ],

@@ -122,11 +122,6 @@ class _OutMenhaDetailsState extends State<OutMenhaDetails> {
                             throw 'Could not launch $url';
                           }
                         },
-                        // textAlign: TextAlign.start,
-                        // style: TextStyle(
-                        //   fontSize: 15.sp,
-                        //   color: HexColor('#707070'),
-                        // ),
                       )
                     ],
                   ),
@@ -134,48 +129,6 @@ class _OutMenhaDetailsState extends State<OutMenhaDetails> {
               ),
             ),
           ),
-          // GestureDetector(
-          //   onTap: () {
-          //     setState(() {
-          //       _launchURL();
-          //     });
-          //     print(widget.link.toString());
-          //   },
-          //   child: Padding(
-          //     padding: EdgeInsets.only(top: 76.h),
-          //     child: Align(
-          //       alignment: Alignment.bottomCenter,
-          //       child: Container(
-          //         width: 360.w,
-          //         height: 66.h,
-          //         decoration: BoxDecoration(
-          //             color: HexColor('#2B468B'),
-          //             borderRadius: BorderRadius.only(
-          //                 topLeft: Radius.circular(53),
-          //                 topRight: Radius.circular(53))),
-          //         child: Center(
-          //             child: Text(
-          //           'registerLink'.tr,
-          //           style: TextStyle(
-          //               fontSize: 20.sp,
-          //               fontWeight: FontWeight.bold,
-          //               color: Colors.white),
-          //         )),
-          //       ),
-          //     ),
-          //   ),
-          // ),
-          // Link(
-          //   uri: Uri.parse(widget.link),
-          //   target: LinkTarget.blank,
-          //   builder: (ctx, openLink) {
-          //     return TextButton.icon(
-          //       onPressed: openLink,
-          //       label: Text('Link Widget documentation'),
-          //       icon: Icon(Icons.read_more),
-          //     );
-          //   },
-          // ),
         ],
       ),
     ));

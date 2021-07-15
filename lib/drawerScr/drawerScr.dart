@@ -28,9 +28,6 @@ class _DrawerScrState extends State<DrawerScr> {
       platformVersion = 'Failed to get platform version.';
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
     if (!mounted) return;
 
     setState(() {
@@ -67,48 +64,6 @@ class _DrawerScrState extends State<DrawerScr> {
                     color: Colors.black),
               ),
             ),
-            // Padding(
-            //   padding: EdgeInsets.only(top: 32.h),
-            //   child: Container(
-            //     width: 304.w,
-            //     height: 1.h,
-            //     color: Colors.grey[200],
-            //   ),
-            // ),
-            // Padding(
-            //   padding: EdgeInsets.only(top: 15.h),
-            //   child: InkWell(
-            //     onTap: () {
-            //       print('lang'.tr.toString());
-            //       if ('language'.tr == 'Language') {
-            //         setState(() {
-            //           LocalizationService().changeLocale('Arabic');
-            //         });
-            //       } else {
-            //         setState(() {
-            //           LocalizationService().changeLocale('English');
-            //         });
-            //       }
-            //     },
-            //     child: Row(
-            //       children: [
-            //         Icon(
-            //           Icons.favorite_rounded,
-            //           size: 30,
-            //           color: Colors.grey[800],
-            //         ),
-            //         SizedBox(
-            //           width: 35.w,
-            //         ),
-            //         Text(
-            //           'language'.tr,
-            //           style:
-            //               TextStyle(fontSize: 14.sp, color: Colors.grey[900]),
-            //         )
-            //       ],
-            //     ),
-            //   ),
-            // ),
             InkWell(
               onTap: () {
                 FlutterOpenWhatsapp.sendSingleMessage("+972592219710", "");
@@ -118,7 +73,7 @@ class _DrawerScrState extends State<DrawerScr> {
                 child: Row(
                   children: [
                     Icon(
-                      Icons.favorite_rounded,
+                      Icons.phone,
                       size: 30,
                       color: Colors.grey[800],
                     ),
@@ -164,7 +119,7 @@ class _DrawerScrState extends State<DrawerScr> {
               child: Row(
                 children: [
                   Icon(
-                    Icons.favorite_rounded,
+                    Icons.share,
                     size: 30,
                     color: Colors.grey[800],
                   ),
@@ -183,7 +138,7 @@ class _DrawerScrState extends State<DrawerScr> {
               child: Row(
                 children: [
                   Icon(
-                    Icons.favorite_rounded,
+                    Icons.logout,
                     size: 30,
                     color: Colors.grey[800],
                   ),

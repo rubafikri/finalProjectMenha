@@ -63,24 +63,7 @@ class _AcceptedScrState extends State<AcceptedScr> {
                           itemCount: querySnapshot!.size,
                           itemBuilder: (BuildContext context, int index) {
                             return InkWell(
-                                // onTap: () {
-                                //   Get.to(() => StudentDetails(
-                                //         querySnapshot.docs[index]['name']
-                                //             .toString(),
-                                //         querySnapshot.docs[index]['uniNum']
-                                //             .toString(),
-                                //         querySnapshot.docs[index]['speclaize']
-                                //             .toString(),
-                                //         querySnapshot.docs[index]['hourPrice']
-                                //             .toString(),
-                                //         querySnapshot.docs[index]['hourNum']
-                                //             .toString(),
-                                //         querySnapshot.docs[index]['userId']
-                                //             .toString(),
-                                //       ));
-                                // },
                                 child: KfalatCard(
-                              // menhaname.toString()
                               querySnapshot.docs[index]['name'].toString(),
                               querySnapshot.docs[index]['minPrice'].toString(),
                             ));
@@ -88,20 +71,6 @@ class _AcceptedScrState extends State<AcceptedScr> {
                       : Center(child: CircularProgressIndicator());
                 },
               ),
-              // ListView.builder(
-              //   shrinkWrap: true,
-              //   physics: NeverScrollableScrollPhysics(),
-              //   itemCount: 20,
-              //   itemBuilder: (context, index) {
-              //     return InkWell(
-              //         onTap: () {
-              //           Get.to(() => StudentDetails());
-              //         },
-              //         child: KfalatCard(
-
-              //         ));
-              //   },
-              // ),
             ),
           )
         ],

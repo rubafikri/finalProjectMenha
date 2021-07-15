@@ -40,7 +40,6 @@ Future<List> rssToJson() async {
   }).then((bodyString) {
     myTranformer.parse(bodyString);
     var json = myTranformer.toParker();
-    print('hihihiihi' + jsonDecode(json)['rss']['channel']['item'].toString());
     return jsonDecode(json)['rss']['channel']['item'];
   });
 }

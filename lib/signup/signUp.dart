@@ -114,7 +114,7 @@ class _SignUpState extends State<SignUp> {
           Container(
             padding: EdgeInsets.only(left: 20, right: 20, top: 10),
             child: TextField(
-              obscureText: visiblbool,
+              obscureText: visiblbool2,
               controller: confpasswordcontroller,
               decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -174,18 +174,6 @@ class _SignUpState extends State<SignUp> {
                         password: passwordcontroller.text.toString(),
                         name: namecontroller.text.toString(),
                         context: context);
-                    // .then((value) {
-                    //   print('hhrehtrhgtehtgerhtrh,,,,,,' + userId);
-                    //   if (userId == '') {
-                    //     CoolAlert.show(
-                    //       context: context,
-                    //       type: CoolAlertType.error,
-                    //       text: 'Invalid Data',
-                    //     );
-                    //   } else {
-                    //     Get.offAll(() => NavBar());
-                    //   }
-                    // });
                   }
                 },
                 child: Container(
@@ -207,33 +195,6 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
           ),
-          Center(
-            child: Padding(
-              padding: EdgeInsets.only(top: 20.h),
-              child: Container(
-                width: 231.w,
-                height: 34.h,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: HexColor('#2B468B')),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image(
-                      image: AssetImage('assets/images/facebook.png'),
-                    ),
-                    Text(
-                      'facebook'.tr,
-                      style: TextStyle(
-                        fontSize: 21.sp,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          )
         ],
       ),
     ));

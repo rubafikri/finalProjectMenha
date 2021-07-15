@@ -5,13 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class KfalatCard extends StatefulWidget {
   final String name;
   final String price;
-  // final String specelize;
-  // final String hourPrice;
-  // final String hourNum;
-  KfalatCard(this.name, this.price,
-      //  this.specelize, this.hourPrice, this.hourNum,
-      {Key? key})
-      : super(key: key);
+
+  KfalatCard(this.name, this.price, {Key? key}) : super(key: key);
 
   @override
   _KfalatCardState createState() => _KfalatCardState();

@@ -172,33 +172,6 @@ class _SigninState extends State<Signin> {
                 ),
               ),
             ),
-            // Align(
-            //   alignment: Alignment.bottomCenter,
-            //   child: Container(
-            //     width: 395.w,
-            //     height: 108.h,
-            //     decoration: BoxDecoration(
-            //         color: HexColor('#2B468B'),
-            //         borderRadius: BorderRadius.only(
-            //             topLeft: Radius.circular(53),
-            //             topRight: Radius.circular(53))),
-            //     child: Center(
-            //       child: InkWell(
-            //         onTap: () {
-            //           Navigator.push(context,
-            //               MaterialPageRoute(builder: (context) => SignUp()));
-            //         },
-            //         child: Text(
-            //           'إنشاء حساب جديد',
-            //           style: TextStyle(
-            //               fontSize: 20.sp,
-            //               fontWeight: FontWeight.bold,
-            //               color: Colors.white),
-            //         ),
-            //       ),
-            //     ),
-            //   ),
-            // )
           ],
         ),
       ),

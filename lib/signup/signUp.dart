@@ -34,18 +34,6 @@ class _SignUpState extends State<SignUp> {
       body: ListView(
         padding: EdgeInsets.only(bottom: 50.h),
         children: [
-          // Padding(
-          //   padding: EdgeInsets.only(top: 40.h),
-          //   child: Center(
-          //     child: Container(
-          //       width: 132.w,
-          //       height: 132.h,
-          //       decoration: BoxDecoration(shape: BoxShape.circle),
-          //       child:
-          //           Image(image: AssetImage('assets/images/selectphoto.png')),
-          //     ),
-          //   ),
-          // ),
           Padding(
             padding: EdgeInsets.only(top: 40.h),
             child: Image.asset(
@@ -134,7 +122,6 @@ class _SignUpState extends State<SignUp> {
                   )),
             ),
           ),
-
           Padding(
             padding: EdgeInsets.only(top: 20.h),
             child: Center(

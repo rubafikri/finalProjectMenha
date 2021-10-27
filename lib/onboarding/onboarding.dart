@@ -85,8 +85,6 @@ class _OnboardingState extends State<Onboarding> {
                     child: FlatButton(
                       onPressed: () {
                         Get.to(() => Signin());
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (context) => Signin()));
                       },
                       child: Text(
                         'ابدأ',

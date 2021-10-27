@@ -73,9 +73,7 @@ Future<String?> registerUsingEmailAndPassword({
   try {
     UserCredential userCredential = await auth.createUserWithEmailAndPassword(
         email: email!, password: password!);
-    // username = name!;
     print('hela' + userCredential.toString());
-    // ignore: unnecessary_null_comparison
     if (userCredential != null) {
       userId = userCredential.user!.uid;
       appGet.tokenuser.value = userId;
@@ -86,28 +84,14 @@ Future<String?> registerUsingEmailAndPassword({
           userId: userId,
           name: name,
           accept: '0');
-      // SPHelper.spHelper.setUserCredintials(userId: userId);
       savetoken(userId, appGet.usertype.value);
 
       return userId;
     } else {
       print('Errorss');
-      // CustomDialougs.utils.showDialoug(messageKey: 'Failed', titleKey: 'alert');
-      // return null;
     }
   } on FirebaseAuthException catch (e) {
-    if (e.code == 'weak-password') {
-      // appGet.pr.hide();
-      // CustomDialougs.utils
-      //     .showDialoug(messageKey: 'week_password', titleKey: 'alert');
-    } else {
-      // appGet.pr.hide();
-      // CustomDialougs.utils
-      //     .showDialoug(messageKey: 'user_email', titleKey: 'alert');
-    }
-    return null;
   } catch (e) {
-    // CustomDialougs.utils.showDialoug(messageKey: e, titleKey: 'alert');
     return null;
   }
 }
@@ -135,7 +119,6 @@ Future<Map?> signInWithEmailAndPassword(
     }
   } on FirebaseAuthException catch (e) {
     pd.close();
-    // appGet.pr.hide();
     if (e.code == 'user-not-found') {
     } else if (e.code == 'wrong-password') {}
     return null;
@@ -179,9 +162,7 @@ Future<bool> saveInFirestore(
     return true;
   } on Exception catch (e) {
     print(e);
-    // appGet.pr.hide();
-    // CustomDialougs.utils
-    //     .showDialoug(messageKey: e.toString(), titleKey: 'alert');
+
     return false;
   }
 }
@@ -214,7 +195,6 @@ Stream<QuerySnapshot>? getAllAcceptnames() {
       .where('accept', isEqualTo: '1')
       .where('register', isEqualTo: '1')
       .snapshots();
-  // print(stream.toString());
   return stream;
 }
 
@@ -255,9 +235,7 @@ Future<bool> registerForMenha(
     return true;
   } on Exception catch (e) {
     print(e);
-    // appGet.pr.hide();
-    // CustomDialougs.utils
-    //     .showDialoug(messageKey: e.toString(), titleKey: 'alert');
+
     return false;
   }
 }

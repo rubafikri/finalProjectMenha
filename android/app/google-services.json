@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "441319928309",
+    "project_id": "menha-15dbc",
+    "storage_bucket": "menha-15dbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441319928309:android:5e85cdb9839ca718a5f0bc",
+        "android_client_info": {
+          "package_name": "com.example.men7a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441319928309-onmtjoktkhp0211d2cdrp1cqgbkhpf45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD12O87ZGBO4BjyEEbE6tTezKYyn061OlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441319928309-onmtjoktkhp0211d2cdrp1cqgbkhpf45.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
